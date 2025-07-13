@@ -3,13 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Guide Immobilier – Accès réservé</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Script Tally pour popup -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       background-color: #111;
       color: #fff;
+      font-family: Arial, sans-serif;
       text-align: center;
       padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
     }
 
     button {
@@ -20,53 +35,27 @@
       font-size: 18px;
       border-radius: 8px;
       cursor: pointer;
+      transition: 0.3s;
     }
 
-    .popup-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.75);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .popup-content {
-      background-color: #1A1A1A;
-      padding: 30px;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 600px;
-    }
-
-    .close-btn {
-      color: #fff;
-      float: right;
-      font-size: 20px;
-      cursor: pointer;
-    }
-
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 10px;
+    button:hover {
+      background-color: #a3822c;
     }
   </style>
 </head>
 <body>
 
   <h1>📘 Guide Immobilier à Dubaï</h1>
-  <p>Accédez à notre guide exclusif après avoir complété le formulaire</p>
-  <button onclick="document.getElementById('popup').style.display='flex'">Télécharger le guide</button>
+  <p>Remplissez le formulaire pour accéder à votre guide PDF</p>
 
-  <div class="popup-overlay" id="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="document.getElementById('popup').style.display='none'">✕</span>
-      <iframe src="https://tally.so/r/npqXWZ"></iframe>
-    </div>
-  </div>
+  <!-- Bouton qui ouvre le formulaire en popup -->
+  <button
+    data-tally-open="npqXWZ"
+    data-tally-emoji-text="📩"
+    data-tally-emoji-animation="head-shake"
+  >
+    Télécharger le guide
+  </button>
 
 </body>
 </html>
