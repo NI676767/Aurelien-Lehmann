@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Guide Immobilier – Accès réservé</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Script Tally pour popup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide Immobilier à Dubaï</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Script Tally -->
   <script async src="https://tally.so/widgets/embed.js"></script>
 
   <style>
     body {
-  background-image: url('https://source.unsplash.com/1600x900/?dubai-night');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Inter', sans-serif;
-  color: #F4F4F4;
-  text-align: center;
-  padding-top: 100px;
-}
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1603721721782-66175a5ff8e5?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #F4F4F4;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+    }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  color: #CBA135;
-  margin-bottom: 10px;
-}
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      color: #CBA135;
+      margin-bottom: 10px;
+    }
 
-p {
-  font-size: 18px;
-  color: #B0B0B0;
-  margin-bottom: 40px;
-}
+    p {
+      font-size: 18px;
+      color: #B0B0B0;
+      margin-bottom: 40px;
+    }
 
-button {
-  background-color: #CBA135;
-  border: none;
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    button {
+      background-color: #CBA135;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
 
-button:hover {
-  background-color: #A77F28;
-}
+    button:hover {
+      background-color: #A77F28;
+    }
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
 
   <h1>📘 Guide Immobilier à Dubaï</h1>
-  <p>Remplissez le formulaire pour accéder à votre guide PDF</p>
+  <p>Remplissez ce court formulaire pour accéder à votre guide PDF exclusif</p>
 
-  <!-- Bouton qui ouvre le formulaire en popup -->
+  <!-- Bouton avec popup Tally -->
   <button
     data-tally-open="npqXWZ"
-    data-tally-emoji-text="📩"
-    data-tally-emoji-animation="head-shake"
+    data-tally-emoji-text="🏙️"
+    data-tally-emoji-animation="heart-beat"
   >
     Télécharger le guide
   </button>
